@@ -14,7 +14,7 @@ It configures the 20 MHz internal oscillator as the clock source and disables cl
 It waits until the clock system has stabilized and the changes are applied. */
 void CLKCTRL_init(void)
 {
-	_PROTECTED_WRITE(CLKCTRL.MCLKCTRLB, CLKCTRL_PDIV_8X_gc | CLKCTRL_PEN_bm);
+	_PROTECTED_WRITE(CLKCTRL.MCLKCTRLB, CLKCTRL_PDIV_16X_gc | CLKCTRL_PEN_bm);
 	_PROTECTED_WRITE(CLKCTRL.MCLKCTRLA, !CLKCTRL_CLKOUT_bm | CLKCTRL_CLKSEL_OSC20M_gc);
 	while (!(CLKCTRL.MCLKSTATUS));
 }

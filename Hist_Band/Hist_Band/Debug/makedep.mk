@@ -6,5 +6,9 @@ Drivers\adc.c
 
 Drivers\clkctrl.c
 
+Drivers\gpio.c
+
+Drivers\uart.c
+
 main.c
 

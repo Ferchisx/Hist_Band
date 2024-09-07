@@ -40,6 +40,8 @@ SUBDIRS :=  \
 C_SRCS +=  \
 ../Drivers/adc.c \
 ../Drivers/clkctrl.c \
+../Drivers/gpio.c \
+../Drivers/uart.c \
 ../main.c
 
 
@@ -52,21 +54,29 @@ ASM_SRCS +=
 OBJS +=  \
 Drivers/adc.o \
 Drivers/clkctrl.o \
+Drivers/gpio.o \
+Drivers/uart.o \
 main.o
 
 OBJS_AS_ARGS +=  \
 Drivers/adc.o \
 Drivers/clkctrl.o \
+Drivers/gpio.o \
+Drivers/uart.o \
 main.o
 
 C_DEPS +=  \
 Drivers/adc.d \
 Drivers/clkctrl.d \
+Drivers/gpio.d \
+Drivers/uart.d \
 main.d
 
 C_DEPS_AS_ARGS +=  \
 Drivers/adc.d \
 Drivers/clkctrl.d \
+Drivers/gpio.d \
+Drivers/uart.d \
 main.d
 
 OUTPUT_FILE_PATH +=Hist_Band.elf
@@ -91,6 +101,20 @@ Drivers/adc.o: ../Drivers/adc.c
 	
 
 Drivers/clkctrl.o: ../Drivers/clkctrl.c
+	@echo Building file: $<
+	@echo Invoking: AVR/GNU C Compiler : 5.4.0
+	$(QUOTE)D:\Prog\MicrochipStudio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"D:\Prog\MicrochipStudio\7.0\Packs\Atmel\ATtiny_DFP\2.0.368\include"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -mmcu=attiny424 -B "D:\Prog\MicrochipStudio\7.0\Packs\Atmel\ATtiny_DFP\2.0.368\gcc\dev\attiny424" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	@echo Finished building: $<
+	
+
+Drivers/gpio.o: ../Drivers/gpio.c
+	@echo Building file: $<
+	@echo Invoking: AVR/GNU C Compiler : 5.4.0
+	$(QUOTE)D:\Prog\MicrochipStudio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"D:\Prog\MicrochipStudio\7.0\Packs\Atmel\ATtiny_DFP\2.0.368\include"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -mmcu=attiny424 -B "D:\Prog\MicrochipStudio\7.0\Packs\Atmel\ATtiny_DFP\2.0.368\gcc\dev\attiny424" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	@echo Finished building: $<
+	
+
+Drivers/uart.o: ../Drivers/uart.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : 5.4.0
 	$(QUOTE)D:\Prog\MicrochipStudio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"D:\Prog\MicrochipStudio\7.0\Packs\Atmel\ATtiny_DFP\2.0.368\include"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -mmcu=attiny424 -B "D:\Prog\MicrochipStudio\7.0\Packs\Atmel\ATtiny_DFP\2.0.368\gcc\dev\attiny424" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
