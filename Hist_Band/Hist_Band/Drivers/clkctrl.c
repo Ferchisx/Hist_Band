@@ -5,6 +5,7 @@
  *  Author: Felipe
  */ 
 #include <avr/io.h>
+#include <avr/xmega.h>
 #include "clkctrl.h"
 
 /* The CLKCTRL_init() function configures the clock system as follows:
