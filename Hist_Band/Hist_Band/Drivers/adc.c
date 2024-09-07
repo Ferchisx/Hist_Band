@@ -4,7 +4,6 @@
  * Created: 7/9/2024 13:35:29
  *  Author: Felipe
  */ 
-
 #include <avr/interrupt.h>
 #include "adc.h"
 
