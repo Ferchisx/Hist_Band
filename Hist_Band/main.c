@@ -22,10 +22,12 @@ string.h: Provides functions for manipulating strings (character arrays) and mem
 #include "gpio.h"
 #include "uart.h"
 
-volatile bool drdy = false;
-uint8_t countTime;
-uint16_t sample;
-uint8_t RXBuffer[20];
+volatile bool drdy = false; /* The keyword "volatile" tells the compiler not to optimize this variable, 
+as it might be changed unexpectedly by something outside the normal program flow, like an interruption.
+The variable drdy is a short for "data ready", express with True or False if the data is ready to be processed */
+uint8_t countTime;	//Used to count the number of clock cycles in a timer
+uint16_t sample;	//Variable which stores the data read in the ADC
+uint8_t RXBuffer[20];	//Buffer to store data received via communication interfaces
 
 ISR(RTC_CNT_vect)
 {
@@ -37,7 +39,7 @@ ISR(RTC_CNT_vect)
 
 int main(void)
 {
-	/* Configure modules */
+	/* Configure modules, Initialize all needed functions */
 	CLKCTRL_init();
 	RTC_init();
 	ADC0_init();

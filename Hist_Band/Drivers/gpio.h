@@ -5,7 +5,7 @@
  *  Author: Felipe
  */ 
 /*
-Library function:
+Library function: Initialize the connections with the GPIO and its relay
 
 GPIO_init: Initializes a GPIO pin for controlling the relay (typically setting it as an output).
 GPIO_relay(bool active): Controls the relay state based on the active parameter. 

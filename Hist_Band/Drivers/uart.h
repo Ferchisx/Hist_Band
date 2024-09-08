@@ -5,7 +5,7 @@
  *  Author: Felipe
  */ 
 /*
-Library function:
+Library function: Initialize and configure an operation to define the necessary BAUD_RATE in the UART
 
 USART0_BAUD_RATE: Depending on the BAUD_RATE given, configures the Baud Rate of the USART taking into account a 1MHz clock
 UART_init(): Initializes the UART, sets up the data format (8 bits, no parity, 1 stop bit), and enables the transmitter.

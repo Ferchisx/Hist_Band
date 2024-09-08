@@ -5,7 +5,7 @@
  *  Author: Felipe
  */ 
 /*
-Library function:
+Library function: Initializes the Analog-Digital Converter
 
 stdint.h: Ensures access to standard, fixed-width integer types like uint8_t, int16_t
 stdbool.h: Provides a standardized way to use Boolean types (true, false)

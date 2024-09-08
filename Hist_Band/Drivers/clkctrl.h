@@ -5,7 +5,7 @@
  *  Author: Felipe
  */ 
 /*
-Library function:
+Library function: Initialize the Clock Control and the Real-Time Clock
 
 CLKCTRL_init: Initializes and configures the system clock settings.
 RTC_init: Sets up the real-time clock for timekeeping tasks.
