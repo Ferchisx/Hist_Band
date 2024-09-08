@@ -1,5 +1,5 @@
 # Hist_Band
-This repository will contain a project in Microchip Studio to control a hysteresis band using the ATTINY424 microcontroller 
+This repository will contain a project in Microchip Studio to control a hysteresis band using the ATTINY414 microcontroller 
 
 # ATTINY information:
 This microcontroller is part of the tinyAVR2 family, it uses an AVR CPU with hardware multiplier
