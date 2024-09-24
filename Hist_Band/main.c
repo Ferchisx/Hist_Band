@@ -22,17 +22,23 @@ string.h: Provides functions for manipulating strings (character arrays) and mem
 #include "gpio.h"
 #include "uart.h"
 
-volatile bool drdy = false; /* The keyword "volatile" tells the compiler not to optimize this variable, 
+volatile bool sensor_drdy = false; /* The keyword "volatile" tells the compiler not to optimize this variable, 
 as it might be changed unexpectedly by something outside the normal program flow, like an interruption.
-The variable drdy is a short for "data ready", express with True or False if the data is ready to be processed */
+The variable sensor_drdy is a short for "data ready", express with True or False if the data from the sensor is ready to be processed */
 uint8_t countTime;	//Used to count the number of clock cycles in a timer
 uint16_t sample;	//Variable which stores the data read in the ADC
 uint8_t RXBuffer[20];	//Buffer to store data received via communication interfaces
 
+bool UART_drdy = false; //Variable which determines whether the information sent via UART is ready or not to be processed
+bool relay_state = false; //Variable to know if the rele is activated or not
+
+uint8_t low_threshold = 20;
+uint8_t upper_threshold = 40;
+
 ISR(RTC_CNT_vect)
 {
 	/* Insert your RTC Overflow interrupt handling code */
-	drdy = true;
+	sensor_drdy = true;
 	/* Overflow interrupt flag has to be cleared manually */
 	RTC.INTFLAGS = RTC_OVF_bm;
 }
@@ -46,10 +52,10 @@ int main(void)
 	GPIO_init();
 	UART_init();
 	
-	countTime = 0;
-	char CommCon[40];
+	countTime = 0;	//Seconds counter
+	char CommCon[40];	//String buffer
 	
-	memset(CommCon,0,40);
+	memset(CommCon,0,40);	//Cleans the buffer by adding zeros to each position
 	sprintf(CommCon, "HisBand Pro 1.0\r\n");
 	UART_SendString(CommCon);
 	
@@ -59,26 +65,32 @@ int main(void)
 	/* Start a conversion */
 	ADC0_start();
 	
-	//GPIO_relay(true);
-	//GPIO_relay(false);
-	
 	/* Replace with your application code */
 	while (1)
 	{
-		if(drdy)
+		if (UART_drdy)
 		{
-			if (countTime == 1) {
-				memset(CommCon,0,40);
-				sprintf(CommCon,"Temperature: %d\r\n", sample);
-				UART_SendString(CommCon);
-				countTime++;
-				} else if(countTime == 3) {
-				countTime = 0;
-				} else {
-				countTime++;
+			//Get the new values for low and upper threshold
+			data_process(&low_threshold, &upper_threshold);
+			if (sample > upper_threshold && !relay_state)
+			{
+				//Activate the relay
+				GPIO_relay(true);
+				relay_state = true;
+				
+				//Send activation message
+				/*sprintf(CommCon, "Relay Turned ON-Temperature: %d\r\n",sample);
+				UART_SendString(CommCon);*/
+			} 
+			else if (sample < low_threshold && relay_state)
+			{
+				//Deactivate the relay
+				GPIO_relay(false);
+				relay_state = false;
+				
+				/*sprintf(CommCon, "Relay Turned OFF-Temperature: %d\r\n",sample);
+				UART_SendString(CommCon);*/
 			}
-			
-			drdy = false;
 		}
 	}
 }

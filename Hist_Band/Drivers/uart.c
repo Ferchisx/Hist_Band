@@ -66,8 +66,8 @@ ISR(USART0_RXC_vect)
 	}
 }
 
-uint8_t data_process(){
-	int minValue = 0, maxValue = 0, upper_t = 0, lower_t = 0;
+uint8_t data_process(uint8_t *lower_threshold, uint8_t *upper_threshold){
+	int minValue = 0, maxValue = 0;
 	char *maxPtr = NULL, *minPtr = NULL;
 
 	maxPtr = strstr(RXBuffer, "MAX:");
@@ -76,10 +76,11 @@ uint8_t data_process(){
 	if (maxPtr && minPtr) {
 		sscanf(maxPtr, "MAX:%d", &maxValue);
 		sscanf(minPtr, "MIN:%d", &minValue);
-		if (minValue < maxValue || minValue<0 || maxValue>200){
-			upper_t = maxValue;
-			lower_t = minValue;
+		if (minValue < maxValue && minValue>0 && maxValue<200){
+			*upper_threshold = maxValue;
+			*lower_threshold = minValue;
 			UART_SendString("Limits applied correctly");
+			return 1;
 		} else{
 			UART_SendString("Error: Input values incorrect");
 		}
@@ -87,5 +88,4 @@ uint8_t data_process(){
 		UART_SendString("Error: MAX or MIN values missing.\r\n");
 	}
 	UART_drdy = false;
-	return upper_t, lower_t;
 }

@@ -19,6 +19,7 @@ data_process: When a flag is activated take the data received and define new thr
 
 #include <stdbool.h>
 #include <stdlib.h>
+#include <stdio.h>
 #include <avr/io.h>
 
 /* Normal Mode, Baud register value */
@@ -26,6 +27,6 @@ data_process: When a flag is activated take the data received and define new thr
 
 void UART_init();
 void UART_SendString(const char *str);
-uint8_t data_process();
+uint8_t data_process(uint8_t *lower_threshold, uint8_t *upper_threshold);
 
 #endif /* UART_H_ */
