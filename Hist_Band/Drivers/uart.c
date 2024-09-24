@@ -13,6 +13,7 @@
 rx_index = 0 is used to keep track of the current index in RXBuffer, helping to manage where the next received byte should be stored.*/
 extern uint8_t RXBuffer[20];
 uint8_t rx_index = 0;
+extern UART_drdy;
 
 /*This function initializes the UART with the necessary parameters like baud rate, and activating both
 Receiver and Transmitter so it can get and send data though the same UART*/
@@ -52,15 +53,39 @@ void UART_SendString(const char *str)
 It stores the received byte in RXBuffer at the current rx_index.
 The code checks if the byte is a newline (0x0A) or if the buffer is full. If either is true, the rx_index is reset to 0 
 to prepare for the next message. Otherwise, the rx_index is incremented to store the next byte in the buffer.
-The commented DataRDY = true; line is used to signal when a complete message has been received.*/
+The commented DataRDY = true; line is used to indicate when a complete message has been received.*/
 ISR(USART0_RXC_vect)
 {
 	RXBuffer[rx_index] = USART0.RXDATAL;
 	
 	if((RXBuffer[rx_index] == 0x0A) || (rx_index == 20)) {
-		//DataRDY = true;
+		UART_drdy = true;
 		rx_index = 0;
 		} else {
 		rx_index++;
 	}
+}
+
+uint8_t data_process(){
+	int minValue = 0, maxValue = 0, upper_t = 0, lower_t = 0;
+	char *maxPtr = NULL, *minPtr = NULL;
+
+	maxPtr = strstr(RXBuffer, "MAX:");
+	minPtr = strstr(RXBuffer, "MIN:");
+		
+	if (maxPtr && minPtr) {
+		sscanf(maxPtr, "MAX:%d", &maxValue);
+		sscanf(minPtr, "MIN:%d", &minValue);
+		if (minValue < maxValue || minValue<0 || maxValue>200){
+			upper_t = maxValue;
+			lower_t = minValue;
+			UART_SendString("Limits applied correctly");
+		} else{
+			UART_SendString("Error: Input values incorrect");
+		}
+	} else {
+		UART_SendString("Error: MAX or MIN values missing.\r\n");
+	}
+	UART_drdy = false;
+	return upper_t, lower_t;
 }

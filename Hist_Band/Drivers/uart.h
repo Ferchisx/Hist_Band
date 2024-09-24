@@ -11,11 +11,13 @@ USART0_BAUD_RATE: Depending on the BAUD_RATE given, configures the Baud Rate of 
 UART_init(): Initializes the UART, sets up the data format (8 bits, no parity, 1 stop bit), and enables the transmitter.
 UART_SendString(const char *str): Sends a null-terminated string over UART by transmitting each character one at a time, 
 waiting for the UART to be ready for each byte.
+data_process: When a flag is activated take the data received and define new threshold values
 */
 
 #ifndef UART_H_
 #define UART_H_
 
+#include <stdbool.h>
 #include <stdlib.h>
 #include <avr/io.h>
 
@@ -24,5 +26,6 @@ waiting for the UART to be ready for each byte.
 
 void UART_init();
 void UART_SendString(const char *str);
+uint8_t data_process();
 
 #endif /* UART_H_ */
