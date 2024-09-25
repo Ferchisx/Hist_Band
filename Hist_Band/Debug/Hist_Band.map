@@ -6,34 +6,24 @@ c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/..
                               main.o (__do_copy_data)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_clear_bss.o)
                               Drivers/uart.o (__do_clear_bss)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(atoi.o)
+                              Drivers/uart.o (atoi)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(strstr.o)
                               Drivers/uart.o (strstr)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(mul10.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(atoi.o) (__mulhi_const_10)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(sprintf.o)
                               main.o (sprintf)
-c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(sscanf.o)
-                              Drivers/uart.o (sscanf)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(vfprintf_std.o)
                               c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(sprintf.o) (vfprintf)
-c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(vfscanf_std.o)
-                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(sscanf.o) (vfscanf)
-c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(isspace.o)
-                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(vfscanf_std.o) (isspace)
-c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(strchr_P.o)
-                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(vfscanf_std.o) (strchr_P)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(strnlen_P.o)
                               c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(vfprintf_std.o) (strnlen_P)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(strnlen.o)
                               c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(vfprintf_std.o) (strnlen)
-c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(fgetc.o)
-                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(vfscanf_std.o) (fgetc)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(fputc.o)
                               c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(vfprintf_std.o) (fputc)
-c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(ungetc.o)
-                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(vfscanf_std.o) (ungetc)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(ultoa_invert.o)
                               c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(vfprintf_std.o) (__ultoa_invert)
-c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(cty_isfalse.o)
-                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(isspace.o) (__ctype_isfalse)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_prologue.o)
                               c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(sprintf.o) (__prologue_saves__)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_epilogue.o)
@@ -113,48 +103,33 @@ Discarded input sections
                 0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_clear_bss.o)
  .text.libgcc.fixed
                 0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_clear_bss.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(atoi.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(atoi.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(atoi.o)
  .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(strstr.o)
  .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(strstr.o)
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(strstr.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(mul10.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(mul10.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(mul10.o)
  .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(sprintf.o)
  .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(sprintf.o)
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(sprintf.o)
- .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(sscanf.o)
- .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(sscanf.o)
- .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(sscanf.o)
  .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(vfprintf_std.o)
  .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(vfprintf_std.o)
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(vfprintf_std.o)
- .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(vfscanf_std.o)
- .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(vfscanf_std.o)
- .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(vfscanf_std.o)
- .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(isspace.o)
- .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(isspace.o)
- .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(isspace.o)
- .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(strchr_P.o)
- .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(strchr_P.o)
- .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(strchr_P.o)
  .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(strnlen_P.o)
  .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(strnlen_P.o)
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(strnlen_P.o)
  .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(strnlen.o)
  .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(strnlen.o)
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(strnlen.o)
- .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(fgetc.o)
- .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(fgetc.o)
- .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(fgetc.o)
  .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(fputc.o)
  .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(fputc.o)
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(fputc.o)
- .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(ungetc.o)
- .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(ungetc.o)
- .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(ungetc.o)
  .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(ultoa_invert.o)
  .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(ultoa_invert.o)
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(ultoa_invert.o)
- .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(cty_isfalse.o)
- .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(cty_isfalse.o)
- .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(cty_isfalse.o)
  .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_prologue.o)
  .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_prologue.o)
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_prologue.o)
@@ -317,7 +292,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000100      0xfc0
+.text           0x00000100      0x97c
  *(.vectors)
  .vectors       0x00000100       0x34 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/2.0.368/gcc/dev/attiny414/avrxmega3/short-calls/crtattiny414.o
                 0x00000100                __vector_default
@@ -332,37 +307,36 @@ END GROUP
                 0x00000134                __trampolines_end = .
  *libprintf_flt.a:*(.progmem.data)
  *libc.a:*(.progmem.data)
- .progmem.data  0x00000134        0xc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(vfscanf_std.o)
  *(.progmem*)
-                0x00000140                . = ALIGN (0x2)
+                0x00000134                . = ALIGN (0x2)
  *(.jumptables)
  *(.jumptables*)
  *(.lowtext)
  *(.lowtext*)
-                0x00000140                __ctors_start = .
+                0x00000134                __ctors_start = .
  *(.ctors)
-                0x00000140                __ctors_end = .
-                0x00000140                __dtors_start = .
+                0x00000134                __ctors_end = .
+                0x00000134                __dtors_start = .
  *(.dtors)
-                0x00000140                __dtors_end = .
+                0x00000134                __dtors_end = .
  SORT(*)(.ctors)
  SORT(*)(.dtors)
  *(.init0)
- .init0         0x00000140        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/2.0.368/gcc/dev/attiny414/avrxmega3/short-calls/crtattiny414.o
-                0x00000140                __init
+ .init0         0x00000134        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/2.0.368/gcc/dev/attiny414/avrxmega3/short-calls/crtattiny414.o
+                0x00000134                __init
  *(.init0)
  *(.init1)
  *(.init1)
  *(.init2)
- .init2         0x00000140        0xc C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/2.0.368/gcc/dev/attiny414/avrxmega3/short-calls/crtattiny414.o
+ .init2         0x00000134        0xc C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/2.0.368/gcc/dev/attiny414/avrxmega3/short-calls/crtattiny414.o
  *(.init2)
  *(.init3)
  *(.init3)
  *(.init4)
- .init4         0x0000014c       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_copy_data.o)
-                0x0000014c                __do_copy_data
- .init4         0x00000162       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_clear_bss.o)
-                0x00000162                __do_clear_bss
+ .init4         0x00000140       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_copy_data.o)
+                0x00000140                __do_copy_data
+ .init4         0x00000156       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_clear_bss.o)
+                0x00000156                __do_clear_bss
  *(.init4)
  *(.init5)
  *(.init5)
@@ -373,127 +347,111 @@ END GROUP
  *(.init8)
  *(.init8)
  *(.init9)
- .init9         0x00000172        0x4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/2.0.368/gcc/dev/attiny414/avrxmega3/short-calls/crtattiny414.o
+ .init9         0x00000166        0x4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/2.0.368/gcc/dev/attiny414/avrxmega3/short-calls/crtattiny414.o
  *(.init9)
  *(.text)
- .text          0x00000176        0x2 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/2.0.368/gcc/dev/attiny414/avrxmega3/short-calls/crtattiny414.o
-                0x00000176                __vector_1
-                0x00000176                __vector_24
-                0x00000176                __vector_12
-                0x00000176                __bad_interrupt
-                0x00000176                __vector_3
-                0x00000176                __vector_23
-                0x00000176                __vector_25
-                0x00000176                __vector_11
-                0x00000176                __vector_13
-                0x00000176                __vector_19
-                0x00000176                __vector_7
-                0x00000176                __vector_5
-                0x00000176                __vector_4
-                0x00000176                __vector_9
-                0x00000176                __vector_2
-                0x00000176                __vector_21
-                0x00000176                __vector_15
-                0x00000176                __vector_8
-                0x00000176                __vector_14
-                0x00000176                __vector_10
-                0x00000176                __vector_16
-                0x00000176                __vector_18
-                0x00000176                __vector_20
-                0x00000178                . = ALIGN (0x2)
+ .text          0x0000016a        0x2 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/2.0.368/gcc/dev/attiny414/avrxmega3/short-calls/crtattiny414.o
+                0x0000016a                __vector_1
+                0x0000016a                __vector_24
+                0x0000016a                __vector_12
+                0x0000016a                __bad_interrupt
+                0x0000016a                __vector_3
+                0x0000016a                __vector_23
+                0x0000016a                __vector_25
+                0x0000016a                __vector_11
+                0x0000016a                __vector_13
+                0x0000016a                __vector_19
+                0x0000016a                __vector_7
+                0x0000016a                __vector_5
+                0x0000016a                __vector_4
+                0x0000016a                __vector_9
+                0x0000016a                __vector_2
+                0x0000016a                __vector_21
+                0x0000016a                __vector_15
+                0x0000016a                __vector_8
+                0x0000016a                __vector_14
+                0x0000016a                __vector_10
+                0x0000016a                __vector_16
+                0x0000016a                __vector_18
+                0x0000016a                __vector_20
+                0x0000016c                . = ALIGN (0x2)
  *(.text.*)
  .text.__vector_17
-                0x00000178       0x3e Drivers/adc.o
-                0x00000178                __vector_17
+                0x0000016c       0x3e Drivers/adc.o
+                0x0000016c                __vector_17
  .text.ADC0_init
-                0x000001b6       0x3e Drivers/adc.o
-                0x000001b6                ADC0_init
+                0x000001aa       0x3e Drivers/adc.o
+                0x000001aa                ADC0_init
  .text.ADC0_start
-                0x000001f4        0x8 Drivers/adc.o
-                0x000001f4                ADC0_start
+                0x000001e8        0x8 Drivers/adc.o
+                0x000001e8                ADC0_start
  .text.CLKCTRL_init
-                0x000001fc       0x20 Drivers/clkctrl.o
-                0x000001fc                CLKCTRL_init
+                0x000001f0       0x20 Drivers/clkctrl.o
+                0x000001f0                CLKCTRL_init
  .text.RTC_init
-                0x0000021c       0x16 Drivers/clkctrl.o
-                0x0000021c                RTC_init
+                0x00000210       0x16 Drivers/clkctrl.o
+                0x00000210                RTC_init
  .text.GPIO_init
-                0x00000232        0xc Drivers/gpio.o
-                0x00000232                GPIO_init
+                0x00000226        0xc Drivers/gpio.o
+                0x00000226                GPIO_init
  .text.GPIO_relay
-                0x0000023e       0x1c Drivers/gpio.o
-                0x0000023e                GPIO_relay
+                0x00000232       0x1c Drivers/gpio.o
+                0x00000232                GPIO_relay
  .text.UART_init
-                0x0000025a       0x20 Drivers/uart.o
-                0x0000025a                UART_init
+                0x0000024e       0x20 Drivers/uart.o
+                0x0000024e                UART_init
  .text.UART_SendString
-                0x0000027a       0x2c Drivers/uart.o
-                0x0000027a                UART_SendString
+                0x0000026e       0x2c Drivers/uart.o
+                0x0000026e                UART_SendString
  .text.__vector_22
-                0x000002a6       0x56 Drivers/uart.o
-                0x000002a6                __vector_22
+                0x0000029a       0x56 Drivers/uart.o
+                0x0000029a                __vector_22
  .text.data_process
-                0x000002fc       0xda Drivers/uart.o
-                0x000002fc                data_process
+                0x000002f0       0x68 Drivers/uart.o
+                0x000002f0                data_process
  .text.__vector_6
-                0x000003d6       0x22 main.o
-                0x000003d6                __vector_6
- .text.main     0x000003f8       0xc8 main.o
-                0x000003f8                main
+                0x00000358       0x22 main.o
+                0x00000358                __vector_6
+ .text.main     0x0000037a       0xda main.o
+                0x0000037a                main
  .text.avr-libc
-                0x000004c0       0x34 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(strstr.o)
-                0x000004c0                strstr
+                0x00000454       0x3c c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(atoi.o)
+                0x00000454                atoi
  .text.avr-libc
-                0x000004f4       0x3e c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(sprintf.o)
-                0x000004f4                sprintf
+                0x00000490       0x34 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(strstr.o)
+                0x00000490                strstr
  .text.avr-libc
-                0x00000532       0x2c c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(sscanf.o)
-                0x00000532                sscanf
+                0x000004c4       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(mul10.o)
+                0x000004c4                __mulhi_const_10
  .text.avr-libc
-                0x0000055e      0x3a4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(vfprintf_std.o)
-                0x0000055e                vfprintf
+                0x000004d4       0x3e c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(sprintf.o)
+                0x000004d4                sprintf
  .text.avr-libc
-                0x00000902      0x51c c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(vfscanf_std.o)
-                0x00000c1c                vfscanf
+                0x00000512      0x3a4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(vfprintf_std.o)
+                0x00000512                vfprintf
  .text.avr-libc
-                0x00000e1e       0x12 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(isspace.o)
-                0x00000e1e                isspace
+                0x000008b6       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(strnlen_P.o)
+                0x000008b6                strnlen_P
  .text.avr-libc
-                0x00000e30       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(strchr_P.o)
-                0x00000e30                strchr_P
+                0x000008cc       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(strnlen.o)
+                0x000008cc                strnlen
  .text.avr-libc
-                0x00000e46       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(strnlen_P.o)
-                0x00000e46                strnlen_P
+                0x000008e2       0x78 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(fputc.o)
+                0x000008e2                fputc
  .text.avr-libc
-                0x00000e5c       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(strnlen.o)
-                0x00000e5c                strnlen
- .text.avr-libc
-                0x00000e72       0x7c c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(fgetc.o)
-                0x00000e72                fgetc
- .text.avr-libc
-                0x00000eee       0x78 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(fputc.o)
-                0x00000eee                fputc
- .text.avr-libc
-                0x00000f66       0x32 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(ungetc.o)
-                0x00000f66                ungetc
- .text.avr-libc
-                0x00000f98       0xbc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(ultoa_invert.o)
-                0x00000f98                __ultoa_invert
- .text.avr-libc
-                0x00001054        0x6 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(cty_isfalse.o)
-                0x00001054                __ctype_isfalse
-                0x00001058                __ctype_istrue
+                0x0000095a       0xbc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(ultoa_invert.o)
+                0x0000095a                __ultoa_invert
  .text.libgcc.prologue
-                0x0000105a       0x32 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_prologue.o)
-                0x0000105a                __prologue_saves__
+                0x00000a16       0x32 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_prologue.o)
+                0x00000a16                __prologue_saves__
  .text.libgcc.prologue
-                0x0000108c       0x30 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_epilogue.o)
-                0x0000108c                __epilogue_restores__
-                0x000010bc                . = ALIGN (0x2)
+                0x00000a48       0x30 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_epilogue.o)
+                0x00000a48                __epilogue_restores__
+                0x00000a78                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x000010bc        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_exit.o)
-                0x000010bc                _exit
-                0x000010bc                exit
+ .fini9         0x00000a78        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_exit.o)
+                0x00000a78                _exit
+                0x00000a78                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -512,63 +470,63 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x000010bc        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_exit.o)
+ .fini0         0x00000a78        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_exit.o)
  *(.fini0)
-                0x000010c0                _etext = .
+                0x00000a7c                _etext = .
 
-.rodata         0x000090c0       0xa7 load address 0x000010c0
+.rodata         0x00008a7c       0x3e load address 0x00000a7c
  *(.rodata)
  *(.rodata*)
  .rodata.str1.1
-                0x000090c0       0x73 Drivers/uart.o
+                0x00008a7c        0xa Drivers/uart.o
  .rodata.str1.1
-                0x00009133       0x34 main.o
+                0x00008a86       0x34 main.o
  *(.gnu.linkonce.r*)
 
-.data           0x00803f00        0x2 load address 0x00001167
+.data           0x00803f00        0x4 load address 0x00000aba
                 0x00803f00                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
  .data.upper_threshold
-                0x00803f00        0x1 main.o
+                0x00803f00        0x2 main.o
                 0x00803f00                upper_threshold
  .data.low_threshold
-                0x00803f01        0x1 main.o
-                0x00803f01                low_threshold
+                0x00803f02        0x2 main.o
+                0x00803f02                low_threshold
  *(.gnu.linkonce.d*)
-                0x00803f02                . = ALIGN (0x2)
-                0x00803f02                _edata = .
-                0x00803f02                PROVIDE (__data_end, .)
+                0x00803f04                . = ALIGN (0x2)
+                0x00803f04                _edata = .
+                0x00803f04                PROVIDE (__data_end, .)
 
-.bss            0x00803f02       0x1b
-                0x00803f02                PROVIDE (__bss_start, .)
+.bss            0x00803f04       0x1b
+                0x00803f04                PROVIDE (__bss_start, .)
  *(.bss)
  *(.bss*)
- .bss.rx_index  0x00803f02        0x1 Drivers/uart.o
-                0x00803f02                rx_index
+ .bss.rx_index  0x00803f04        0x1 Drivers/uart.o
+                0x00803f04                rx_index
  .bss.relay_state
-                0x00803f03        0x1 main.o
-                0x00803f03                relay_state
- .bss.UART_drdy
-                0x00803f04        0x1 main.o
-                0x00803f04                UART_drdy
- .bss.sensor_drdy
                 0x00803f05        0x1 main.o
-                0x00803f05                sensor_drdy
+                0x00803f05                relay_state
+ .bss.UART_drdy
+                0x00803f06        0x1 main.o
+                0x00803f06                UART_drdy
+ .bss.sensor_drdy
+                0x00803f07        0x1 main.o
+                0x00803f07                sensor_drdy
  *(COMMON)
- COMMON         0x00803f06       0x17 main.o
-                0x00803f06                countTime
-                0x00803f07                RXBuffer
-                0x00803f1b                sample
-                0x00803f1d                PROVIDE (__bss_end, .)
-                0x00001167                __data_load_start = LOADADDR (.data)
-                0x00001169                __data_load_end = (__data_load_start + SIZEOF (.data))
+ COMMON         0x00803f08       0x17 main.o
+                0x00803f08                countTime
+                0x00803f09                RXBuffer
+                0x00803f1d                sample
+                0x00803f1f                PROVIDE (__bss_end, .)
+                0x00000aba                __data_load_start = LOADADDR (.data)
+                0x00000abe                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x00803f1d        0x0
+.noinit         0x00803f1f        0x0
                 [!provide]                PROVIDE (__noinit_start, .)
  *(.noinit*)
                 [!provide]                PROVIDE (__noinit_end, .)
-                0x00803f1d                _end = .
+                0x00803f1f                _end = .
                 [!provide]                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0
@@ -617,13 +575,9 @@ END GROUP
  .comment       0x00000030       0x31 Drivers/uart.o
  .comment       0x00000030       0x31 main.o
  .comment       0x00000030       0x31 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(sprintf.o)
- .comment       0x00000030       0x31 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(sscanf.o)
  .comment       0x00000030       0x2c c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(vfprintf_std.o)
                                  0x2d (size before relaxing)
- .comment       0x0000005c       0x2d c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(vfscanf_std.o)
- .comment       0x0000005c       0x31 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(fgetc.o)
  .comment       0x0000005c       0x31 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(fputc.o)
- .comment       0x0000005c       0x31 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(ungetc.o)
 
 .note.gnu.avr.deviceinfo
                 0x00000000       0x3c
@@ -661,42 +615,42 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x3030
+.debug_info     0x00000000     0x2fc4
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000     0x1871 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/2.0.368/gcc/dev/attiny414/avrxmega3/short-calls/crtattiny414.o
  .debug_info    0x00001871      0x5f0 Drivers/adc.o
  .debug_info    0x00001e61      0x529 Drivers/clkctrl.o
  .debug_info    0x0000238a      0x23a Drivers/gpio.o
- .debug_info    0x000025c4      0x557 Drivers/uart.o
- .debug_info    0x00002b1b      0x515 main.o
+ .debug_info    0x000025c4      0x4eb Drivers/uart.o
+ .debug_info    0x00002aaf      0x515 main.o
 
-.debug_abbrev   0x00000000     0x1d8f
+.debug_abbrev   0x00000000     0x1d47
  *(.debug_abbrev)
  .debug_abbrev  0x00000000     0x1720 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/2.0.368/gcc/dev/attiny414/avrxmega3/short-calls/crtattiny414.o
  .debug_abbrev  0x00001720      0x15a Drivers/adc.o
  .debug_abbrev  0x0000187a       0xe6 Drivers/clkctrl.o
  .debug_abbrev  0x00001960       0xcd Drivers/gpio.o
- .debug_abbrev  0x00001a2d      0x204 Drivers/uart.o
- .debug_abbrev  0x00001c31      0x15e main.o
+ .debug_abbrev  0x00001a2d      0x1bc Drivers/uart.o
+ .debug_abbrev  0x00001be9      0x15e main.o
 
-.debug_line     0x00000000      0x94f
+.debug_line     0x00000000      0x902
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x00000000      0x136 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/2.0.368/gcc/dev/attiny414/avrxmega3/short-calls/crtattiny414.o
  .debug_line    0x00000136      0x174 Drivers/adc.o
  .debug_line    0x000002aa      0x142 Drivers/clkctrl.o
  .debug_line    0x000003ec      0x129 Drivers/gpio.o
- .debug_line    0x00000515      0x247 Drivers/uart.o
- .debug_line    0x0000075c      0x1f3 main.o
+ .debug_line    0x00000515      0x1f4 Drivers/uart.o
+ .debug_line    0x00000709      0x1f9 main.o
 
-.debug_frame    0x00000000      0x1d0
+.debug_frame    0x00000000      0x1c0
  *(.debug_frame)
  .debug_frame   0x00000000       0x68 Drivers/adc.o
  .debug_frame   0x00000068       0x34 Drivers/clkctrl.o
  .debug_frame   0x0000009c       0x34 Drivers/gpio.o
- .debug_frame   0x000000d0       0xac Drivers/uart.o
- .debug_frame   0x0000017c       0x54 main.o
+ .debug_frame   0x000000d0       0x9c Drivers/uart.o
+ .debug_frame   0x0000016c       0x54 main.o
 
-.debug_str      0x00000000     0x1651
+.debug_str      0x00000000     0x163d
  *(.debug_str)
  .debug_str     0x00000000      0xa33 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/2.0.368/gcc/dev/attiny414/avrxmega3/short-calls/crtattiny414.o
  .debug_str     0x00000a33      0x65b Drivers/adc.o
@@ -705,17 +659,17 @@ END GROUP
                                 0x62b (size before relaxing)
  .debug_str     0x000014ba       0x34 Drivers/gpio.o
                                 0x269 (size before relaxing)
- .debug_str     0x000014ee      0x107 Drivers/uart.o
-                                0x37f (size before relaxing)
- .debug_str     0x000015f5       0x5c main.o
+ .debug_str     0x000014ee       0xf3 Drivers/uart.o
+                                0x36b (size before relaxing)
+ .debug_str     0x000015e1       0x5c main.o
                                 0x361 (size before relaxing)
 
-.debug_loc      0x00000000      0x31c
+.debug_loc      0x00000000      0x34d
  *(.debug_loc)
  .debug_loc     0x00000000       0x70 Drivers/adc.o
  .debug_loc     0x00000070       0x3a Drivers/gpio.o
- .debug_loc     0x000000aa      0x1ef Drivers/uart.o
- .debug_loc     0x00000299       0x83 main.o
+ .debug_loc     0x000000aa      0x220 Drivers/uart.o
+ .debug_loc     0x000002ca       0x83 main.o
 
 .debug_macinfo
  *(.debug_macinfo)

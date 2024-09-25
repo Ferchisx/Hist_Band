@@ -66,26 +66,23 @@ ISR(USART0_RXC_vect)
 	}
 }
 
-uint8_t data_process(uint8_t *lower_threshold, uint8_t *upper_threshold){
-	int minValue = 0, maxValue = 0;
+uint8_t data_process(int *lower_threshold, int *upper_threshold){
 	char *maxPtr = NULL, *minPtr = NULL;
 
+	// Find the positions of "MAX:" and "MIN:"
 	maxPtr = strstr(RXBuffer, "MAX:");
 	minPtr = strstr(RXBuffer, "MIN:");
-		
-	if (maxPtr && minPtr) {
-		sscanf(maxPtr, "MAX:%d", &maxValue);
-		sscanf(minPtr, "MIN:%d", &minValue);
-		if (minValue < maxValue && minValue>0 && maxValue<200){
-			*upper_threshold = maxValue;
-			*lower_threshold = minValue;
-			UART_SendString("Limits applied correctly");
-			return 1;
-		} else{
-			UART_SendString("Error: Input values incorrect");
-		}
-	} else {
-		UART_SendString("Error: MAX or MIN values missing.\r\n");
+
+	// If MAX is found, extract the number after "MAX:"
+	if (maxPtr != NULL) {
+		maxPtr += 4;  // Move the pointer past "MAX:"
+		*upper_threshold = atoi(maxPtr);  // Convert the number to an integer
+	}
+
+	// If MIN is found, extract the number after "MIN:"
+	if (minPtr != NULL) {
+		minPtr += 4;  // Move the pointer past "MIN:"
+		*lower_threshold = atoi(minPtr);  // Convert the number to an integer
 	}
 	UART_drdy = false;
 }

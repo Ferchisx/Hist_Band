@@ -32,8 +32,8 @@ uint8_t RXBuffer[20];	//Buffer to store data received via communication interfac
 bool UART_drdy = false; //Variable which determines whether the information sent via UART is ready or not to be processed
 bool relay_state = false; //Variable to know if the rele is activated or not
 
-uint8_t low_threshold = 20;
-uint8_t upper_threshold = 40;
+int low_threshold = 20;
+int upper_threshold = 40;
 
 ISR(RTC_CNT_vect)
 {
@@ -79,8 +79,10 @@ int main(void)
 				relay_state = true;
 				
 				//Send activation message
-				/*sprintf(CommCon, "Relay Turned ON-Temperature: %d\r\n",sample);
-				UART_SendString(CommCon);*/
+				memset(CommCon, 0, 40);
+				sprintf(CommCon, "Relay Turned ON-Temperature: %d\r\n",sample);
+				UART_SendString(CommCon);
+
 			} 
 			else if (sample < low_threshold && relay_state)
 			{
@@ -88,8 +90,11 @@ int main(void)
 				GPIO_relay(false);
 				relay_state = false;
 				
-				/*sprintf(CommCon, "Relay Turned OFF-Temperature: %d\r\n",sample);
-				UART_SendString(CommCon);*/
+/*
+				memset(CommCon, 0, 40);
+				sprintf(CommCon, "Relay Turned OFF-Temperature: %d\r\n",sample);
+				UART_SendString(CommCon);
+*/
 			}
 		}
 	}
