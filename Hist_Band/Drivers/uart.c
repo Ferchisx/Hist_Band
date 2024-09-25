@@ -13,7 +13,8 @@
 rx_index = 0 is used to keep track of the current index in RXBuffer, helping to manage where the next received byte should be stored.*/
 extern uint8_t RXBuffer[20];
 uint8_t rx_index = 0;
-extern UART_drdy;
+bool UART_drdy = false;
+const char delim[8] = "AIMNX:,";
 
 /*This function initializes the UART with the necessary parameters like baud rate, and activating both
 Receiver and Transmitter so it can get and send data though the same UART*/
@@ -58,7 +59,7 @@ ISR(USART0_RXC_vect)
 {
 	RXBuffer[rx_index] = USART0.RXDATAL;
 	
-	if((RXBuffer[rx_index] == 0x0A) || (rx_index == 20)) {
+	if((RXBuffer[rx_index] == 0x0A) || (rx_index == 19)) {
 		UART_drdy = true;
 		rx_index = 0;
 		} else {
@@ -67,22 +68,21 @@ ISR(USART0_RXC_vect)
 }
 
 uint8_t data_process(int *lower_threshold, int *upper_threshold){
-	char *maxPtr = NULL, *minPtr = NULL;
-
-	// Find the positions of "MAX:" and "MIN:"
-	maxPtr = strstr(RXBuffer, "MAX:");
-	minPtr = strstr(RXBuffer, "MIN:");
-
-	// If MAX is found, extract the number after "MAX:"
-	if (maxPtr != NULL) {
-		maxPtr += 4;  // Move the pointer past "MAX:"
-		*upper_threshold = atoi(maxPtr);  // Convert the number to an integer
+	int control = 0;
+	char *token = strtok((char *)RXBuffer, delim);
+	if (token != NULL){
+		*lower_threshold = atoi(token);
+		control++;
 	}
-
-	// If MIN is found, extract the number after "MIN:"
-	if (minPtr != NULL) {
-		minPtr += 4;  // Move the pointer past "MIN:"
-		*lower_threshold = atoi(minPtr);  // Convert the number to an integer
+	token = strtok(NULL, delim);
+	if (token != NULL){
+		*upper_threshold = atoi(token);
+		control++;
 	}
-	UART_drdy = false;
+	if (control == 2){
+		return 1;
+	}else{
+		UART_SendString("Error en la obtención de datos");
+		return 0;
+	}
 }

@@ -29,11 +29,8 @@ uint8_t countTime;	//Used to count the number of clock cycles in a timer
 uint16_t sample;	//Variable which stores the data read in the ADC
 uint8_t RXBuffer[20];	//Buffer to store data received via communication interfaces
 
-bool UART_drdy = false; //Variable which determines whether the information sent via UART is ready or not to be processed
+extern bool UART_drdy; //Variable which determines whether the information sent via UART is ready or not to be processed
 bool relay_state = false; //Variable to know if the rele is activated or not
-
-int low_threshold = 20;
-int upper_threshold = 40;
 
 ISR(RTC_CNT_vect)
 {
@@ -51,6 +48,9 @@ int main(void)
 	ADC0_init();
 	GPIO_init();
 	UART_init();
+	
+	int low_threshold = 20;
+	int upper_threshold = 40;
 	
 	countTime = 0;	//Seconds counter
 	char CommCon[40];	//String buffer
@@ -72,6 +72,7 @@ int main(void)
 		{
 			//Get the new values for low and upper threshold
 			data_process(&low_threshold, &upper_threshold);
+			
 			if (sample > upper_threshold && !relay_state)
 			{
 				//Activate the relay
@@ -82,7 +83,6 @@ int main(void)
 				memset(CommCon, 0, 40);
 				sprintf(CommCon, "Relay Turned ON-Temperature: %d\r\n",sample);
 				UART_SendString(CommCon);
-
 			} 
 			else if (sample < low_threshold && relay_state)
 			{
@@ -90,11 +90,10 @@ int main(void)
 				GPIO_relay(false);
 				relay_state = false;
 				
-/*
+				//Send deactivation message
 				memset(CommCon, 0, 40);
 				sprintf(CommCon, "Relay Turned OFF-Temperature: %d\r\n",sample);
 				UART_SendString(CommCon);
-*/
 			}
 		}
 	}
