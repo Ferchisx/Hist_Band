@@ -7,9 +7,7 @@
 #include <avr/interrupt.h>
 #include "adc.h"
 
-extern uint16_t sample; 
-/*Extern definition makes "sample" to work as a global variable with no allocated memory, avoiding 
-redefinition or redeclaration elsewhere in the code and making it callable in other files of the project*/
+uint16_t sample;
 
 /*The ISR for the ADC0_RESRDY interrupt performs the following tasks:
 Clears the Interrupt Flag: The interruption can't be triggered repeatedly until a new condition occurs
@@ -61,4 +59,8 @@ void ADC0_start(void)
 {
 	/* Start conversion */
 	ADC0.COMMAND = ADC_STCONV_bm;
+}
+
+uint8_t temp_conv(int *temperature){
+	
 }
