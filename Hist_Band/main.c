@@ -50,6 +50,7 @@ int main(void)
 	
 	int low_threshold = 20;
 	int upper_threshold = 40;
+	int temperature;
 	
 	countTime = 0;	//Seconds counter
 	char CommCon[40];	//String buffer
@@ -68,6 +69,8 @@ int main(void)
 	while (1)
 	{
 		if(state) {
+			temp_conv(&temperature);
+			
 			if (countTime == 3) {
 				memset(CommCon, 0, 40);
 				sprintf(CommCon, "Temperature: %d\r\n", sample);

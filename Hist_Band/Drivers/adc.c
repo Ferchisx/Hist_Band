@@ -62,5 +62,6 @@ void ADC0_start(void)
 }
 
 uint8_t temp_conv(int *temperature){
-	
+	*temperature = (sample);
+	return 1;
 }
