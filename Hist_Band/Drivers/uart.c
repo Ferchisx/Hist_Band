@@ -71,21 +71,19 @@ ISR(USART0_RXC_vect)
 string and divides it to look for a number to convert thanks to the ATOI function, saving the numeric values into the pointers
 of my low and upper threshold, returning both to the main.c and printing correct execution when checking the control flag*/
 uint8_t data_process(int *lower_threshold, int *upper_threshold){
-	int control = 0;
 	char *token = strtok((char *)RXBuffer, delim);
 	if (token != NULL){
 		*lower_threshold = atoi(token);
-		control++;
 	}
 	token = strtok(NULL, delim);
 	if (token != NULL){
 		*upper_threshold = atoi(token);
-		control++;
 	}
-	if (control == 2){
+	if (*lower_threshold < *upper_threshold){
+		UART_SendString("Data received correctly");
 		return 1;
-	}else{
-		UART_SendString("Error en la obtención de datos");
+	} else {
+		UART_SendString("Error receiving data");
 		return 0;
 	}
 }
