@@ -5,6 +5,8 @@ This repository will contain a project in Microchip Studio to control a hysteres
 The hysteresis band works taking 2 thresholds (low and upper) and keeping the temperature in a box between this band. It is
 made with 5 modules: Sensor, Step-Up, Microcontroller, Communications and Output.
 
+![image](https://github.com/user-attachments/assets/66091c55-ece7-474b-8195-b073e385dce6)
+
 # Modules:
  - Sensor: By using a thermoresistor we collect the information of temperature from inside a box, the box has a fan and a halogen lamp
  - Step-Up: The information is received in form of voltage, we use this module to increase the voltage to send it between the necessary
