@@ -68,7 +68,7 @@ ISR(USART0_RXC_vect)
 }
 
 /*This function was made to receive the data sent via UART after taking the string from the Bluetooth module, it takes the
-string and divides it so look for a number to convert thanks to the ATOI function, saving the numeric values into the pointers
+string and divides it to look for a number to convert thanks to the ATOI function, saving the numeric values into the pointers
 of my low and upper threshold, returning both to the main.c and printing correct execution when checking the control flag*/
 uint8_t data_process(int *lower_threshold, int *upper_threshold){
 	int control = 0;
