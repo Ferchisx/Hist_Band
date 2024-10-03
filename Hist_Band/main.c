@@ -48,8 +48,10 @@ int main(void)
 	GPIO_init();
 	UART_init();
 	
-	int low_threshold = 20;
-	int upper_threshold = 40;
+	int low_threshold = 25;
+	int upper_threshold = 45;
+	int min;
+	int max;
 	int temperature;
 	
 	countTime = 0;	//Seconds counter
@@ -70,40 +72,47 @@ int main(void)
 	{
 		if(state) {
 			temp_conv(&temperature);
-			
+			  
 			if (countTime == 3) {
 				memset(CommCon, 0, 40);
-				sprintf(CommCon, "Temperature: %d\r\n", sample);
+				sprintf(CommCon, "Temperature: %dºC\r\n",temperature);
 				UART_SendString(CommCon);
 				countTime = 0;
 			} else {
 				countTime++;
 			}
 			
-			if (sample > upper_threshold && !relay_state) {
+			if (temperature >= upper_threshold && !relay_state) {
 				//Activate the relay
 				GPIO_relay(true);
 				relay_state = true;
 				
 				//Send activation message
 				memset(CommCon, 0, 40);
-				sprintf(CommCon, "Relay Turned ON-Temperature: %d\r\n",sample);
+				sprintf(CommCon,"Relay Turned ON\r\n");
 				UART_SendString(CommCon);
-			} else if (sample < low_threshold && relay_state) {
+			} else if (temperature <= low_threshold && relay_state) {
 				//Deactivate the relay
 				GPIO_relay(false);
 				relay_state = false;
 			
 				//Send deactivation message
 				memset(CommCon, 0, 40);
-				sprintf(CommCon, "Relay Turned OFF-Temperature: %d\r\n",sample);
+				sprintf(CommCon,"Relay Turned OFF\r\n");
 				UART_SendString(CommCon);
 			}
 			
 			if (UART_drdy)
 			{
-				//Get the new values for low and upper threshold
-				data_process(&low_threshold, &upper_threshold);
+				data_process(&min,&max);
+				if(min < max){
+					low_threshold = min;
+					upper_threshold = max;
+					UART_SendString("Data received correctly\r\n");
+				}else{
+					UART_SendString("Error receiving data\r\n");
+				}
+				UART_drdy = false;
 			}
 			state = false;
 		}
