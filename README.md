@@ -40,3 +40,5 @@ Peripheral Oveview:
   - 1 SPI
   - 1 TWI (I2C)
   - 1 ADC channel
+
+![image](https://github.com/user-attachments/assets/f7747773-333b-4247-b986-102373388ec5)
