@@ -21,7 +21,7 @@ Receiver and Transmitter so it can get and send data though the same UART*/
 void UART_init()
 {
 
-	USART0.BAUD = (uint16_t)USART0_BAUD_RATE(9600); /* set baud rate register */
+	USART0.BAUD = (uint16_t)USART0_BAUD_RATE(115200); /* set baud rate register */
 
 	USART0.CTRLA = USART_RXCIE_bm;  /* Receive Complete Interrupt Enable: enabled */
 	
@@ -70,20 +70,13 @@ ISR(USART0_RXC_vect)
 /*This function was made to receive the data sent via UART after taking the string from the Bluetooth module, it takes the
 string and divides it to look for a number to convert thanks to the ATOI function, saving the numeric values into the pointers
 of my low and upper threshold, returning both to the main.c and printing correct execution when checking the control flag*/
-uint8_t data_process(int *lower_threshold, int *upper_threshold){
+void data_process(int *min, int *max){
 	char *token = strtok((char *)RXBuffer, delim);
 	if (token != NULL){
-		*lower_threshold = atoi(token);
+		*min = atoi(token);
 	}
 	token = strtok(NULL, delim);
 	if (token != NULL){
-		*upper_threshold = atoi(token);
-	}
-	if (*lower_threshold < *upper_threshold){
-		UART_SendString("Data received correctly");
-		return 1;
-	} else {
-		UART_SendString("Error receiving data");
-		return 0;
+		*max = atoi(token);
 	}
 }

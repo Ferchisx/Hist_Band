@@ -24,10 +24,10 @@ data_process: When a flag is activated take the data received and define new thr
 #include <avr/io.h>
 
 /* Normal Mode, Baud register value */
-#define USART0_BAUD_RATE(BAUD_RATE) ((float)(1000000 * 64 / (16 * (float)BAUD_RATE)) + 0.5)
+#define USART0_BAUD_RATE(BAUD_RATE) ((float)(2000000 * 64 / (16 * (float)BAUD_RATE)) + 0.5)
 
 void UART_init();
 void UART_SendString(const char *str);
-uint8_t data_process(int *lower_threshold, int *upper_threshold);
+void data_process(int *min, int *max);
 
 #endif /* UART_H_ */
